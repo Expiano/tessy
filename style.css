@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(23, 26, 32);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.body-container {
+  width: 100%;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six,
+.section-seven,
+.section-eight,
+.section-nine {
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.section-one {
+  background-image: url(Homepage-Model-Y-Desktop-Global.avif);
+}
+
+.section-two {
+  background-image: url(tesla-model3.jpg);
+  padding: 0 0 30px 0;
+}
+
+.section-three {
+  background-image: url(tesla/Homepage-Model-X-Desktop-LHD.jfif);
+}
+
+.section-four {
+  background-image: url(tesla/Mega-Menu-Vehicles-HMC-RedBlue-LHD.png);
+}
+
+.section-five {
+  background-image: url(tesla/Homepage-Cybertruck-Desktop.jpg);
+}
+
+.section-six {
+  background-image: url(tesla/Homepage-SolarPanels-01-Desktop.jfif);
+}
+
+.section-seven {
+  background-image: url(tesla/Homepage-SolarRoof-Desktop-Global.jfif);
+}
+
+.section-eight {
+  background-image: url(tesla/Mega-Menu-Energy-Powerwall-US.png);
+}
+
+.section-nine {
+  background-image: url(tesla/Homepage-Accessories-Desktop-NA-APAC.jpg);
+}
+
+.vehicles-dropdown,
+.energy-dropdown-container,
+.charging-dropdown,
+.shop-dropdown {
+  display: none;
+  gap: 40px;
+}
+
+.vehicles-dropdown,
+.energy-dropdown-container,
+.charging-dropdown,
+.shop-dropdown {
+  left: 0px;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.vehicle-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 40px;
+  width: 65%;
+}
+
+.vehicle-left-top,
+.energy-left-top {
+  align-items: center;
+  display: flex;
+}
+
+.vehicle-left-one-container,
+.energy-left-one-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#caption {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#learn-order-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+#learn,
+#order,
+#get-started {
+  text-decoration: underline solid gray;
+}
+
+#vehicle-label,
+#label p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.vehicle-left-two {
+  height: 150px;
+}
+
+.vehicle-left-three,
+.vehicle-left-five,
+.vehicle-left-four,
+.vehicle-left-six {
+  height: 130px;
+}
+
+.vehicle-left-two img,
+.vehicle-left-three img,
+.vehicle-left-five img,
+.vehicle-left-four img,
+.vehicle-left-six img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.vehicle-left-six {
+  margin: 0 0 0 20px;
+}
+
+.vehicle-left-bottom,
+.energy-left-bottom {
+  align-items: center;
+  display: flex;
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(226, 227, 227);
+  height: 370px;
+  margin: 30px 0 0 60px;
+  width: 1%;
+}
+
+.vehicle-right {
+  width: 34%;
+  margin: 0 0 0 40px;
+}
+
+.energy-left-one,
+.left-one,
+.energy-left-two,
+.energy-left-three,
+.energy-left-five,
+.energy-left-four,
+.energy-left-six {
+  height: 130px;
+}
+
+.energy-left-one img,
+.left-one img,
+.energy-left-two img,
+.energy-left-three img,
+.energy-left-five img,
+.energy-left-four img,
+.energy-left-six img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+ul {
+  font-size: 14px;
+  line-height: 20px;
+  list-style-type: none;
+  margin: 40px 0 0 -12px;
+  padding: 8px 12px;
+}
+
+a {
+  color: rgb(23, 26, 32);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+li {
+  margin: 0 0 12px 0;
+}
+
+.discover-dropdown-container {
+  display: none;
+  gap: 60px;
+  height: 70%;
+  left: 0px;
+  position: absolute;
+  padding: 0 0 0 400px;
+  width: 100%;
+  top: 80px;
+}
+
+#discover-link-head {
+  color: rgb(92, 94, 98);
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 30px 0;
+}
+
+.site-logo-container {
+  object-fit: cover;
+  color: rgb(92, 94, 98)
+}
+
+.site-logo-container img {
+  width: 120px;
+  height: 70px;
+  display: block;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  gap: 300px;
+  /* margin: 20px 0 0 0; */
+  padding: 14px 40px 0 60px;
+}
+
+.center-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.right-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.vehicle-nav-container:hover .vehicles-dropdown {
+  background-color: white;
+  display: flex;
+  height: 70%;
+  z-index: 3;
+}
+
+.energy-nav-container:hover .energy-dropdown-container {
+  background-color: white;
+  display: flex;
+  z-index: 3;
+}
+
+.charging-nav-container:hover .charging-dropdown {
+  background-color: white;
+  display: flex;
+  z-index: 3;
+}
+
+.discover-nav-container:hover .discover-dropdown-container {
+  background-color: white;
+  display: flex;
+  z-index: 3;
+}
+
+.shop-nav-container:hover .shop-dropdown {
+  background-color: white;
+  display: flex;
+  height: 50%;
+  z-index: 3;
+}
+
+.discover-nav-container:hover,
+.energy-nav-container:hover,
+.charging-nav-container:hover,
+.shop-nav-container:hover,
+.vehicle-nav-container:hover,
+.material-symbols-outlined:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.shop-nav-container:hover body {
+  filter: blur(20px);
+}
+
+.discover-nav-container {
+  border-radius: 5px;
+}
+
+.charging-nav,
+.energy-nav,
+.vehicle-nav,
+.site-logo-container,
+.discover-nav-container,
+.material-symbols-outlined {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.section-text-one,
+.section-two-text-one,
+.section-three-text-one {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+}
+
+.section-text-one {
+  transform: translate(400px, 85px);
+}
+
+.section-two-text-one,
+.section-three-text-one {
+  transform: translate(400px, 135px);
+}
+
+#section-five-texts-middle {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0 40px 0;
+  transform: translate(0px, 535px);
+}
+
+#section-texts-top {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 290px 0;
+}
+
+#section-texts-top-one h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+#section-texts-top-two p,
+#section-texts-top-three p {
+  line-height: 20px;
+}
+
+#section-texts-top-two p {
+  font-size: 20px;
+}
+
+#section-texts-middle,
+#section-six-texts-middle {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0 40px 0;
+}
+
+#section-texts-middle-one a {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+#section-texts-middle-two a {
+  background-color: rgba(34, 34, 34, 0.65);
+  color: rgb(234, 234, 234);
+}
+
+#section-texts-middle-one a,
+#section-texts-middle-two a {
+  border-radius: 5px;
+  padding: 10px 90px;
+}
+
+#section-texts-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#section-texts-bottom-two a:after {
+  position: absolute;
+  height: 1px;
+  margin: 0 auto;
+  content: "";
+  left: 0;
+  right: 0;
+  width: 90%;
+  background-color: black;
+  left: 0;
+  bottom: -0.5px;
+  width: 180px;
+}
+
+#section-texts-six {
+  transform: translate(400px, 125px);
+}
+
+#section-six-texts-middle {
+  margin: 60px 0 0 0;
+}
+
+.section-text-top {
+  color: white;
+}
+
+.section-text-top a {
+  color: white;
+}
+
+.section-text-top a:after {
+  position: absolute;
+  height: 1px;
+  margin: 0 auto;
+  content: "";
+  left: 0;
+  right: 0;
+  width: 90%;
+  background-color: white;
+  left: 0;
+  bottom: -0.5px;
+  top: 70px;
+  width: 200px;
+}
+
+.section-nine-text-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(555px, 125px);
+  width: fit-content;
+}
+
+.footer-ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-ul a {
+  color: rgb(208, 209, 210);
+  font-weight: 500;
+}
+
+.footer-div {
+  transform: translate(380px, 185px);
+}
+
+#link-hover-effect a:hover {
+  text-decoration: underline;
+}
